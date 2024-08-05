@@ -2,6 +2,11 @@
 
 Monaco Editor 官方 rep: https://microsoft.github.io/monaco-editor/
 
+## 演示效果
+演示站点：https://boommanpro.github.io/vue3-vite-monaco-editor/
+
+![演示图片](https://raw.githubusercontent.com/boommanpro/vue3-vite-monaco-editor/main/images/Snipaste_001.jpg)
+
 ## 整体链路
 
 ①创建vite项目
@@ -41,8 +46,10 @@ self.MonacoEnvironment = {
 
 monaco.languages.typescript.typescriptDefaults.setEagerModelSync(true);
 ```
+
 3. main.js 引入 -> `import './worker.js'`
 4. 创建组件 MonacoVite.vue 组件实现了双向绑定
+
 ```
 <template>
   <div :style="{
