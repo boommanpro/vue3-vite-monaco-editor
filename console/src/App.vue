@@ -15,7 +15,9 @@ const code = ref("{}");
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
+  <button @click="code='123'">set code =123</button>
   <monaco-vite :width="500" :height="500" v-model:="code" language="json"></monaco-vite>
+  binding code: {{code}}
 </template>
 
 <style scoped>

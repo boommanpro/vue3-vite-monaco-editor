@@ -108,4 +108,7 @@ watch(() => props.modelValue, (newVal, oldVal) => {
 </script>
 
 ```
-5. 引入组件   <monaco-vite :width="500" :height="500" v-model:="code" language="json"></monaco-vite>
+5. 引入组件
+```
+<monaco-vite :width="500" :height="500" v-model:="code" language="json"></monaco-vite>
+```
